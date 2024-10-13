@@ -44,7 +44,7 @@ OPENAI_API_KEY=your_api_key_here
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/your_username/your_repository.git
+git clone git@github.com:mitdua/post_ln_1.git
 ```
 
 ### Install dependencies:
