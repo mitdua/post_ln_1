@@ -51,11 +51,17 @@ git clone git@github.com:mitdua/post_ln_1.git
 ```bash
 pip install -r requirements.txt
 ```
-### Start the FastAPI server
 
+### Start the FastAPI server
 ```bash
 uvicorn main:app --reload
 ```
+
+### Or Using Docker Compose File (recommended)
+```bash
+docker compose up --build
+```
+
 ## Frontend
 The frontend allows users to record audio directly from the browser and send the file to the backend for processing. It uses Bootstrap 5 for design and native JavaScript APIs for handling audio recording.
 

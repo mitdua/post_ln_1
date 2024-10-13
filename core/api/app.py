@@ -18,6 +18,7 @@ app.include_router(router=front, prefix="")
 # Configurar los orígenes permitidos
 origins = [
     "http://localhost:8000",   
+    "http://localhost",   
     
 ]
 
@@ -69,6 +70,7 @@ async def get_text_to_audio(audio_file: UploadFile = File(...)) -> Resposta:
         return Resposta(success=response.success)
 
     except Exception as e:
+        print(f"{e}")
         return Response(
             content=Resposta(erro=f"{e}").model_dump_json(),
             status_code=HTTPStatus.BAD_REQUEST,
