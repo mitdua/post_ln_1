@@ -20,7 +20,7 @@ This project enables audio file transcription and automatic translation of the t
 
 ## Requirements
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 - **Pydub** for audio conversion (`pip install pydub`)
 - **FastAPI** for the backend (`pip install fastapi`)
 - **OpenAI Python SDK** to interact with OpenAI APIs (`pip install openai`)
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 ### Start the FastAPI server
 ```bash
-uvicorn main:app --reload
+uvicorn api.app:app --reload
 ```
 
 ### Or Using Docker Compose File (recommended)
